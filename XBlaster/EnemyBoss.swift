@@ -61,6 +61,6 @@ class EnemyBoss: Enemy, SKPhysicsContactDelegate {
         // Changing the maxVelicity and maxSteeringForce will change how an entity moves towards its waypoint.
         // Changing these values can generate some interesting movement effects
         aiSteering.maxVelocity = 4.0
-        aiSteering.maxSteeringForce = 0.5
+        aiSteering.maxSteeringForce = 0.1
     }
 }
