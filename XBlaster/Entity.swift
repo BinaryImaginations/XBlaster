@@ -26,6 +26,7 @@ class Entity: SKSpriteNode {
     var score = 0
     var lives = 1  // Number of times to respawn
     var attackDamage = 1
+    var velocity = CGVector(dx: 1.0, dy: 1.0)
 
     init(position: CGPoint, texture: SKTexture) {
         super.init(texture: texture, color: SKColor.whiteColor(),

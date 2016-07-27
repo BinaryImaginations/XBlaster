@@ -23,7 +23,7 @@ class EnemyA: Enemy, SKPhysicsContactDelegate {
             mainShip.fontSize = 30
             mainShip.fontColor = SKColor.whiteColor()
             mainShip.text = "(=⚇=)"
-            
+            mainShip.physicsBody?.velocity = CGVector(dx: 1.0, dy: 1.0)
             let textureView = SKView()
             SharedTexture.texture = textureView.textureFromNode(mainShip)!
             SharedTexture.texture.filteringMode = .Nearest
@@ -59,7 +59,7 @@ class EnemyA: Enemy, SKPhysicsContactDelegate {
 
         // Changing the maxVelicity and maxSteeringForce will change how an entity moves towards its waypoint.
         // Changing these values can generate some interesting movement effects
-        aiSteering.maxVelocity = 16.0
+        aiSteering.maxVelocity = 5.0
         aiSteering.maxSteeringForce = 0.1
     }
     
